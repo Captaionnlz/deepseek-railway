@@ -1,3 +1,6 @@
 {
-  "project_type": "docker"
+  "project_type": "docker",
+  "build": {
+    "builder": "docker"
+  }
 }
