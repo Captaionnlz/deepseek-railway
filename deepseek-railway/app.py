@@ -216,10 +216,10 @@ def home():
 
 
 if __name__ == '__main__':
-    # 这个部分Vercel不执行，但本地测试需要
-    port = int(os.environ.get("PORT", 5000))
+    # 关键修改：将默认端口从 5000 改为 8080
+    port = int(os.environ.get("PORT", 8080))  # 这里改了！
     print("=" * 60)
-    print("🚀 DeepSeek学习助手服务器 - Vercel部署版")
+    print("🚀 DeepSeek学习助手服务器 - Zeabur部署版")
     print("=" * 60)
     print(f"🌐 服务端口: {port}")
     print("=" * 60)
